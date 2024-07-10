@@ -145,17 +145,6 @@
             color: #333;
         }
 
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-        }
-
         /* Footer Styles */
         footer {
             background-color: #333;
@@ -208,24 +197,43 @@
 
         .image-container {
             flex: 0 0 30%;
+            /* Keeps the container width at 30% of its parent */
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
+            /* Ensures rounded corners are visible */
+
         }
 
         .image-container img {
-            max-width: 100%;
+            width: 100%;
+            /* Ensures the image fills its container */
             height: auto;
+            /* Maintains aspect ratio */
+            border-radius: 10px;
+            /* Rounded corners */
         }
 
         .youtube-link {
             margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .youtube-link textarea {
+        .youtube-link iframe {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .youtube-link .line {
             width: 100%;
-            resize: vertical;
-            align-items: center;
+            height: 2px;
+            background-color: #000;
+            /* Adjust color as needed */
+            margin-top: 10px;
+            /* Adjust spacing as needed */
         }
 
         .section .google-form {
@@ -474,7 +482,7 @@
                             transition to your new home.</p>
                     </div>
                     <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipPd2B50XiJMHkStBHQ_2HyiRvrrD5ZUKXuSukKa=s680-w680-h510"
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipOLs1DYl41fAwy5rVghbi78fcsPP5pQmu3bvcWA=s1360-w1360-h1020"
                             alt="Local Movers">
                     </div>
                 </div>
@@ -495,7 +503,7 @@
                             professionalism and care, ensuring a smooth transition to your new location.</p>
                     </div>
                     <div class="image-container">
-                        <img src="https://lh5.googleusercontent.com/p/AF1QipMSXwzU2Ps6DVqmG0JJuoyflwUlR_IAoK6g5DPu=w141-h101-n-k-no-nu"
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNlOlEa10or6xj_6ocZkRVQvSzFFmvDM-6G9Nw5=s1360-w1360-h1020"
                             alt="Long Distance Moves
                             ">
                     </div>
@@ -541,10 +549,10 @@
                             needs, you can save time and reduce stress, knowing your possessions are in expert hands. We
                             provide comprehensive packing solutions that guarantee the safety and security of your items
                             throughout the moving process.</p>
-                        
+
                     </div>
                     <div class="image-container">
-                        <img src="https://lh5.googleusercontent.com/p/AF1QipOtktyBeJtdGOkxatnrwJrPk00XqRFe9ivh8cIb=w141-h101-n-k-no-nu"
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNp5S_GaI6J7OEL0qjeW14bVnys2_PQgk9tOyij=s1360-w1360-h1020"
                             alt="Packing">
                     </div>
                 </div>
@@ -769,13 +777,14 @@
                     </p>
 
                 </div>
-                            <div class="youtube-link">
-                <iframe width="500" height="360" src="https://www.youtube.com/embed/nixyj_7CkCs?si=PhgAK-k1EQK2pQmp"
-                    title="Movers in Boston | 617 Boston Movers | Call +1 (617) 208-4040" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="line"></div>
-            </div>
+                <div class="youtube-link">
+                    <iframe width="500" height="360" src="https://www.youtube.com/embed/nixyj_7CkCs?si=PhgAK-k1EQK2pQmp"
+                        title="Movers in Boston | 617 Boston Movers | Call +1 (617) 208-4040" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="line"></div>
+                </div>
+
             </div>
         </div>
         <div class="section">
@@ -786,52 +795,6 @@
         </div>
         <div class="line"></div>
 
-        <!-- <div class="section">
-            <span>
-                <h2 style="color: #4630D2; font-size: 26px; text-align: center;">Contact Us</h2>
-            </span>
-            <br>
-            <ul class="contact-list">
-                <li>
-                    <h4>Affordable Locksmith Tampa</h4>
-                    <br>
-                    <p>Tampa, FL 33611, USA</p>
-                    <p>+1 (813) 625-7979</p>
-                </li>
-                <li>
-                    <h4>Business Hours:</h4>
-                    <br>
-                    <p>Sun 7:00 AM - 11:00 PM</p>
-                    <p>Mon 7:00 AM - 11:00 PM</p>
-                    <p>Tue 7:00 AM - 11:00 PM</p>
-                    <p>Wed 7:00 AM - 11:00 PM</p>
-                    <p>Thu 7:00 AM - 11:00 PM</p>
-                    <p>Fri 7:00 AM - 11:00 PM</p>
-                    <p>Sat 7:00 AM - 11:00 PM</p>
-
-                    <p>
-                        <a href="tel:+18136257979"><button style=" background-color: #007bff;
-                        color: #fff;
-                        border: none;
-                        padding: 12px 24px;
-                        font-size: 18px;
-                        border-radius: 5px;
-                        cursor: pointer;">Call Now</button></a>
-                    </p>
-
-                </li>
-                <li>
-                    <h4>Service Areas:</h4>
-                    <br>
-                    <p>Tampa</p>
-                    <p>Tampa Bay Area</p>
-                    <p>Hillsborough County</p>
-                    <p>Pinellas County</p>
-                    <p>Pasco County</p>
-                    <p>Tampa-St. Petersburg Area</p>
-                </li>
-            </ul>
-        </div> -->
 
         <div class="section">
             <h2 style="color: #4630D2; font-size: 26px;">Why Choose 617 Boston Movers?
@@ -890,14 +853,14 @@
                 </div>
             </div>
             <!-- <div class="google-maps-container"> -->
-                <!-- <div class="google-maps" style="margin: 0 auto;"> Center the third map -->
-                    <!-- <iframe src="https://batchgeo.com/map/Affordable-Locksmith-Tampa" width="100%" height="100%" -->
-                        <!-- style="border:0;" allowfullscreen="" loading="lazy" -->
-                        <!-- referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                    <!-- <br> <br> <p><small>To view map in Full Screen click <a href='https://batchgeo.com/map/Affordable-Locksmith-Tampa' target="_blank" style="text-decoration: none; color: #007bff; ">here</a></small></p> -->
-                <!-- </div> -->
-            </div>
+            <!-- <div class="google-maps" style="margin: 0 auto;"> Center the third map -->
+            <!-- <iframe src="https://batchgeo.com/map/Affordable-Locksmith-Tampa" width="100%" height="100%" -->
+            <!-- style="border:0;" allowfullscreen="" loading="lazy" -->
+            <!-- referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <!-- <br> <br> <p><small>To view map in Full Screen click <a href='https://batchgeo.com/map/Affordable-Locksmith-Tampa' target="_blank" style="text-decoration: none; color: #007bff; ">here</a></small></p> -->
+            <!-- </div> -->
         </div>
+    </div>
     </div>
 
     <!-- <div class="section"> -->
@@ -910,8 +873,7 @@
 
                     <a href="https://www.facebook.com/617bostonmovers/ 
                         "><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/617bostonmovers/"><i
-                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/617bostonmovers/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://x.com/617BostonMovers"><i class="fa-brands fa-twitter"></i></a>
                     <a
                         href="https://www.google.com/maps/d/viewer?mid=1GHzoZBwtB8tQtACdnKmW56nB8b1Ykcw&ll=42.3824655%2C-71.03228209999999&z=17"><i
