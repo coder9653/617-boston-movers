@@ -1,1031 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boston Movers - 617 Boston Movers | Professional Moving Services</title>
-    <link rel="icon" type="favicon"
-        href="https://617bostonmovers.com/wp-content/uploads/2023/11/617-Boston-Movers-logo.png.webp">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="description"
-        content="Discover 617 Boston Movers, a trusted moving company with 10+ years of experience, ensuring a stress-free relocation in Boston.">
-    <link rel="canonical" href="https://617-boston-movers.blogspot.com/">
-    <style>
-        /* Base styles */
-        html,
-        body {
-            background-color: #FFFFFF;
-            transition: all 0.3s;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Header Styles */
-        header {
-            background-color: #4630D2;
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 999;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            max-height: 40px;
-            margin-right: 10px;
-        }
-
-        .website-name {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-links li {
-            margin-left: 20px;
-        }
-
-        nav a {
-            color: inherit;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #7096c5;
-        }
-
-        .menu-icon {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .menu-icon span {
-            width: 25px;
-            height: 3px;
-            background-color: white;
-            margin: 2px 0;
-        }
-
-        @media screen and (max-width: 768px) {
-            .menu-icon {
-                display: flex;
-            }
-
-            nav {
-                position: fixed;
-                top: 0;
-                left: -100%;
-                width: 250px;
-                height: 100vh;
-                background-color: #4630D2;
-                transition: 0.3s;
-            }
-
-            nav.active {
-                left: 0;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                padding-top: 60px;
-            }
-
-            .nav-links li {
-                margin: 10px 0;
-            }
-        }
-
-        /* Hero Section Styles */
-        .hero {
-            position: relative;
-            background-image: url('https://lh3.googleusercontent.com/p/AF1QipMfOFX7DIjXLX6KyfB1NBSn8TXtBfEssc5kn6to=s680-w680-h510');
-            background-size: cover;
-            background-position: center top;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-            padding: 0 20px;
-            margin-top: 70px;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-            z-index: 1;
-        }
-
-        .hero h1,
-        .hero button {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .hero button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 12px 24px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Main Content Styles */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #333;
-            font-size: 26px;
-        }
-
-        .section h3 {
-            color: #333;
-        }
-
-        .line {
-            width: 100%;
-            height: 1px;
-            background-color: #ccc;
-            margin: 20px 0;
-        }
-
-        .content-wrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        .content {
-            flex: 0 0 65%;
-        }
-
-        .image-container {
-            flex: 0 0 30%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        /* YouTube Link Styles */
-        .youtube-link {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .youtube-link iframe {
-            display: block;
-            margin: 0 auto;
-        }
-
-        /* Google Form Styles */
-        .google-form {
-            margin-top: 40px;
-        }
-
-        .google-form iframe {
-            width: 100%;
-            height: 2230px;
-            border: none;
-        }
-
-        /* Contact List Styles */
-        .contact-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .contact-list li {
-            flex: 0 0 30%;
-            margin-bottom: 20px;
-        }
-
-        /* Google Maps Styles */
-        .google-maps-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .google-maps {
-            flex: 1;
-            max-width: 400px;
-            height: 300px;
-            margin: 0 auto;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #4630D2;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .footerContainer {
-            width: 100%;
-            padding: 70px 30px 20px;
-        }
-
-        .socialIcons {
-            display: flex;
-            justify-content: center;
-        }
-
-        .socialIcons a {
-            text-decoration: none;
-            padding: 10px;
-            background-color: white;
-            margin: 10px;
-            border-radius: 50%;
-        }
-
-        .socialIcons a i {
-            font-size: 2em;
-            color: black;
-            opacity: 0.9;
-        }
-
-        .socialIcons a:hover {
-            background-color: rgba(51, 51, 51, 0.966);
-            transition: 0.5s;
-        }
-
-        .socialIcons a:hover i {
-            color: white;
-            transition: 0.5s;
-        }
-
-        .footerNav {
-            margin: 30px 0;
-        }
-
-        .footerNav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-        }
-
-        .footerNav ul li a {
-            color: white;
-            margin: 20px;
-            text-decoration: none;
-            font-size: 1.3em;
-            opacity: 0.7;
-            transition: 0.5s;
-        }
-
-        .footerNav ul li a:hover {
-            opacity: 1;
-        }
-
-        /* Responsive Styles */
-        @media screen and (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .logo-container {
-                margin-bottom: 10px;
-            }
-
-            nav {
-                width: 100%;
-            }
-
-            .menu-icon {
-                display: flex;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .nav-links.show {
-                display: flex;
-            }
-
-            .nav-links li {
-                margin: 10px 0;
-            }
-
-            .hero {
-                margin-top: 120px;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .content-wrapper {
-                flex-direction: column;
-            }
-
-            .content,
-            .image-container {
-                flex: 0 0 100%;
-            }
-
-            .image-container {
-                margin-top: 20px;
-            }
-
-            .google-maps-container {
-                flex-direction: column;
-            }
-
-            .google-maps {
-                max-width: 100%;
-                margin-bottom: 20px;
-            }
-
-            iframe {
-                width: 100%;
-                height: 300px;
-            }
-
-            .contact-list li {
-                flex: 0 0 100%;
-            }
-
-            .footerNav ul {
-                flex-direction: column;
-            }
-
-            .footerNav ul li {
-                margin: 5px 0;
-            }
-
-            .socialIcons a {
-                font-size: 24px;
-                padding: 8px;
-                margin: 0 5px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            body {
-                font-size: 14px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            h3 {
-                font-size: 18px;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-
-            .google-drawing iframe,
-            .google-docs iframe,
-            .google-slides iframe,
-            .google-calendar iframe {
-                width: 100%;
-                height: 300px;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            .image-container img {
-                max-width: 100%;
-                height: auto;
-            }
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        @media screen and (max-width: 768px) {
-            .container {
-                padding: 20px 10px;
-                width: 100%;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>617 Boston Movers | Local &amp; Interstate Moving Company in Boston, MA</title>
+<meta name="description" content="617 Boston Movers provides local, residential, commercial, hourly, last-minute and interstate moving, plus packing and storage, from 215 Condor St, Boston.">
+<link rel="canonical" href="https://coder9653.github.io/617-boston-movers/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="617 Boston Movers">
+<meta property="og:title" content="617 Boston Movers | Local &amp; Interstate Moving Company in Boston, MA">
+<meta property="og:description" content="617 Boston Movers provides local, residential, commercial, hourly, last-minute and interstate moving, plus packing and storage, from 215 Condor St, Boston.">
+<meta property="og:url" content="https://coder9653.github.io/617-boston-movers/">
+<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXCLoNP0Dc2jBG8pAxv7RhG6IcKS8OqLza6YqO3M6bGZVhn_LKBSDKWbSXBdkRF_xexWqAhkZwwTWQdy7DSudWq50LYJlCDtWxOQkUxZFl7d24x5xuHsCB94r5H1MC9cWAOsjN-Ph91MuI=w1200-h630-p-k-no">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a1f44">
+<link rel="icon" href="https://617bostonmovers.com/_astro/header-logo.FxUM5eWh_ZCwSXG.avif?dpl=6af671ce7c93c0214a4e428b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://lh3.googleusercontent.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap">
+<style>:root{--navy:#0a1f44;--navy2:#12306b;--accent:#2563eb;--accent2:#1d4ed8;--soft:#f3f6fb;--ink:#1f2937;--r:14px;--fh:'Plus Jakarta Sans',system-ui,sans-serif;--fb:'Inter',system-ui,sans-serif}*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;font-family:var(--fb);color:var(--ink);background:#fff;line-height:1.7;font-size:17px;overflow-x:hidden}img,iframe{max-width:100%;display:block}img{height:auto}a{color:var(--accent2);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:var(--navy)}h1,h2,h3{font-family:var(--fh);line-height:1.2;color:var(--navy);margin:0 0 .6em;letter-spacing:-.01em}h1{font-size:clamp(2.1rem,4.6vw,3.5rem);font-weight:800}h2{font-size:clamp(1.6rem,3vw,2.35rem);font-weight:800}h3{font-size:1.2rem;font-weight:700}p{margin:0 0 1em}svg{width:1em;height:1em;fill:currentColor;flex:none}.wrap{width:min(1200px,100% - 40px);margin-inline:auto}.narrow{width:min(860px,100% - 40px)}.center{text-align:center}.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 14px;z-index:100}.skip:focus{left:10px;top:10px}:focus-visible{outline:3px solid var(--accent);outline-offset:2px}/* buttons */.btn{display:inline-flex;align-items:center;gap:.5em;padding:.78em 1.3em;border-radius:calc(var(--r) * .7);font-weight:700;font-family:var(--fh);text-decoration:none;border:2px solid transparent;transition:transform .15s ease,background .15s ease,box-shadow .15s ease;cursor:pointer;line-height:1.2;font-size:.98rem}.btn:hover{transform:translateY(-2px)}.btn-lg{padding:.95em 1.55em;font-size:1.02rem}.btn-small{padding:.55em 1em;font-size:.9rem}.btn-accent{background:var(--accent);color:#fff;box-shadow:0 8px 20px -8px var(--accent)}.btn-accent:hover{background:var(--accent2);color:#fff}.btn-outline{border-color:var(--accent);color:var(--accent2);background:transparent}.btn-outline:hover{background:var(--accent);color:#fff}.btn-ghost{border-color:var(--navy);color:var(--navy)}.btn-ghost:hover{background:var(--navy);color:#fff}.btn-ghost-light{border-color:rgba(255,255,255,.7);color:#fff}.btn-ghost-light:hover{background:#fff;color:var(--navy)}.btn-white{background:#fff;color:var(--navy)}.btn-white:hover{color:var(--accent2)}.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.4em}/* header */.site-header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 rgba(10,20,40,.08)}.topbar{background:var(--navy);color:#cfd8e6;font-size:.84rem}.topbar-in{display:flex;justify-content:space-between;gap:16px;padding:7px 0;flex-wrap:wrap}.topbar span,.topbar a{display:inline-flex;align-items:center;gap:6px;color:#dbe4f2;text-decoration:none}.tb-right{display:flex;gap:18px}.topbar a:hover{color:#fff}.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);font-family:var(--fh);font-weight:800;font-size:1.2rem}.brand img{width:auto;height:58px;object-fit:contain}.menu{list-style:none;display:flex;align-items:center;gap:6px;margin:0;padding:0}.menu>li>a,.drop-btn{display:inline-flex;align-items:center;gap:4px;padding:10px 14px;border-radius:8px;font-weight:600;color:var(--ink);text-decoration:none;font-family:var(--fh);font-size:.98rem;background:none;border:0;cursor:pointer}.menu>li>a:hover,.drop-btn:hover,.has-drop:focus-within>.drop-btn{color:var(--accent2);background:var(--soft)}.menu a[aria-current="page"],.has-drop.is-active>.drop-btn{color:var(--accent2);box-shadow:inset 0 -3px 0 var(--accent)}.menu .nav-cta a{color:#fff;background:var(--accent);margin-left:8px}.menu .nav-cta a:hover{background:var(--accent2);color:#fff}.has-drop{position:relative}.drop-btn svg{transition:transform .2s}.drop{list-style:none;margin:0;padding:10px;position:absolute;top:calc(100% + 6px);left:50%;transform:translate(-50%,8px);background:#fff;border-radius:var(--r);box-shadow:0 22px 50px -12px rgba(10,25,60,.28);border:1px solid #e6ebf3;width:620px;display:grid;grid-template-columns:1fr 1fr;gap:2px;opacity:0;visibility:hidden;transition:.18s ease}.drop a{display:block;padding:9px 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:.94rem;font-weight:500}.drop a:hover,.drop a[aria-current="page"]{background:var(--soft);color:var(--accent2)}@media (hover:hover) and (min-width:1025px){.has-drop:hover .drop{opacity:1;visibility:visible;transform:translate(-50%,0)}}.has-drop.open .drop{opacity:1;visibility:visible;transform:translate(-50%,0)}.has-drop.open .drop-btn svg{transform:rotate(180deg)}.nav-toggle{display:none;background:none;border:0;padding:8px;color:var(--navy);cursor:pointer;font-size:1.8rem}.nav-toggle svg:last-child{display:none}.nav-toggle[aria-expanded="true"] svg:first-child{display:none}.nav-toggle[aria-expanded="true"] svg:last-child{display:block}@media (max-width:1024px){.nav-toggle{display:block}.site-nav{position:fixed;inset:calc(var(--hh,112px)) 0 0 0;background:#fff;overflow-y:auto;padding:16px 20px 40px;transform:translateX(100%);transition:transform .25s ease;border-top:1px solid #e6ebf3}.site-nav.open{transform:none}.menu{flex-direction:column;align-items:stretch;gap:2px}.menu>li>a,.drop-btn{width:100%;justify-content:space-between;padding:14px 12px;font-size:1.05rem}.drop{position:static;transform:none;width:auto;grid-template-columns:1fr;box-shadow:none;border:0;background:var(--soft);display:none;opacity:1;visibility:visible;margin:4px 0 8px}.has-drop.open .drop{display:grid;transform:none}.nav-cta{margin-top:12px}.nav-cta a{justify-content:center!important}.topbar-in>span:first-child{display:none}.tb-right{width:100%;justify-content:space-between}}@media (max-width:520px){.brand span{font-size:1rem}.brand img{height:40px}.tb-right a:first-child{display:none}.tb-right{justify-content:center}}/* hero */.hero{position:relative;color:#fff;background:var(--navy);overflow:hidden}.hero::before{content:"";position:absolute;inset:0;background:var(--hero-img) center/cover no-repeat;opacity:.18}.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,var(--navy) 35%,transparent 120%)}.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:72px 0 80px}.hero h1{color:#fff;margin-bottom:.4em}.hero .lead{font-size:1.14rem;color:#dbe4f3;max-width:640px}.hero .lead strong{color:#fff}.hero-media{margin:0;position:relative}.hero-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:calc(var(--r) * 1.4);box-shadow:0 30px 60px -20px rgba(0,0,0,.55)}.hero-media::after{content:"";position:absolute;inset:auto -14px -14px auto;width:55%;height:55%;border:3px solid var(--accent);border-radius:calc(var(--r) * 1.4);z-index:-1}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600;letter-spacing:.02em;color:#e6edf8}.hero-facts{list-style:none;padding:0;margin:26px 0 0;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.93rem;color:#cfdaec}.hero-facts li{display:flex;align-items:center;gap:7px}.hero-facts svg{color:#7fb2ff}.crumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0 0 18px;font-size:.88rem;color:#b9c6dc}.crumbs li+li::before{content:"/";margin-right:6px;opacity:.6}.crumbs a{color:#dfe8f6}/* hero variants */.hero-full .hero::before{opacity:.55}.hero-full .hero::after{background:linear-gradient(90deg,rgba(6,15,35,.92) 0%,rgba(6,15,35,.7) 55%,rgba(6,15,35,.35) 100%)}.hero-full .hero-in{grid-template-columns:1fr;padding:110px 0 120px}.hero-full .hero-media{display:none}.hero-angled .hero{clip-path:polygon(0 0,100% 0,100% 90%,0 100%)}.hero-angled .hero-in{padding-bottom:120px}.hero-angled .hero-photo{border-radius:50% 50% var(--r) var(--r)/30% 30% var(--r) var(--r)}/* sections */.sec{padding:84px 0}.sec.alt{background:var(--soft)}.sec-head{max-width:800px;margin-bottom:40px}.sec-head p:last-child{margin-bottom:0}.center .sec-head,.sec-head.center{margin-inline:auto;text-align:center}.kicker{font-family:var(--fh);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin-bottom:.6em}.prose{max-width:860px}.split{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}.split.rev .split-copy{order:2}.split-media .rounded,.split-media img{width:100%;aspect-ratio:9/7;object-fit:cover;border-radius:var(--r);box-shadow:0 24px 48px -24px rgba(10,25,60,.45)}.h-sm{font-size:1.4rem}/* cards */.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:26px}.svc-card{background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}.svc-card img{width:100%;aspect-ratio:16/10;object-fit:cover}.svc-body{padding:24px 26px 14px}.svc-body p{font-size:.98rem}.cards-lift .svc-card,.cards-lift .feat,.cards-lift .dest-card{box-shadow:0 14px 34px -18px rgba(10,25,60,.35);border:1px solid #edf1f7}.cards-lift .svc-card:hover,.cards-lift .dest-card:hover,.cards-lift .feat:hover{transform:translateY(-4px);box-shadow:0 22px 44px -18px rgba(10,25,60,.4)}.cards-outline .svc-card,.cards-outline .feat,.cards-outline .dest-card{border:1.5px solid #dde4ef;box-shadow:none}.cards-outline .svc-card:hover,.cards-outline .feat:hover,.cards-outline .dest-card:hover{border-color:var(--accent)}.cards-flat .svc-card,.cards-flat .feat,.cards-flat .dest-card{background:#fff;border:0;box-shadow:0 1px 0 #e3e8f1}.cards-flat .sec:not(.alt) .svc-card,.cards-flat .sec:not(.alt) .feat,.cards-flat .sec:not(.alt) .dest-card{background:var(--soft)}.cards-flat .svc-card:hover,.cards-flat .feat:hover,.cards-flat .dest-card:hover{transform:translateY(-3px)}.feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}.feat{background:#fff;border-radius:var(--r);padding:28px;transition:.2s ease}.feat h3{margin-bottom:.45em}.feat p{font-size:.98rem}.feat p:last-child{margin-bottom:0}.feat-ic{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:12px;background:var(--soft);color:var(--accent);font-size:1.4rem;margin-bottom:14px}.sec.alt .feat-ic{background:#fff}/* destinations */.dest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}.dest-card{background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.2s ease}.dest-media{position:relative;display:block}.dest-media img{width:100%;aspect-ratio:16/10;object-fit:cover}.dest-tag{position:absolute;left:12px;bottom:12px;background:var(--navy);color:#fff;font-size:.78rem;font-weight:700;padding:5px 10px;border-radius:999px;font-family:var(--fh)}.dest-body{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}.dest-body h3{margin-bottom:.2em}.dest-body h3 a{color:var(--navy);text-decoration:none}.dest-body .route{display:flex;align-items:center;gap:6px;color:var(--accent2);font-weight:600;font-size:.9rem;margin-bottom:.6em}.dest-body p{font-size:.95rem}.dest-body .btn{margin-top:auto;align-self:flex-start}/* steps */.steps-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start}.steps{list-style:none;margin:0;padding:0;display:grid;gap:16px;counter-reset:s}.step{display:flex;gap:20px;background:#fff;border-radius:var(--r);padding:22px 24px;border:1px solid #e6ebf3}.sec:not(.alt) .step{background:var(--soft);border-color:transparent}.step-n{flex:none;width:52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-family:var(--fh);font-weight:800}.step h3{margin-bottom:.35em}.step p{margin-bottom:.5em;font-size:.98rem}.step p:last-child{margin-bottom:0}.steps-video{position:sticky;top:130px}/* areas */.area-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}.area-group{background:#fff;border-radius:var(--r);padding:24px;border:1px solid #e6ebf3}.sec:not(.alt) .area-group{background:var(--soft);border-color:transparent}.area-group h3{font-size:1.06rem;padding-bottom:10px;border-bottom:2px solid var(--accent);display:inline-block}.city-list{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}.city-list li{display:flex;align-items:center;gap:6px;font-size:.96rem}.city-list svg{color:var(--accent);font-size:.9em}.area-grid.single .area-group{grid-column:1/-1}.area-grid.single .city-list{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}.area-note{margin-top:24px;font-style:italic;color:#4b5563}/* checklist */.checklist{list-style:none;margin:0;padding:28px;background:#fff;border-radius:var(--r);display:grid;gap:12px;box-shadow:0 18px 40px -24px rgba(10,25,60,.35)}.sec.alt .checklist{background:#fff}.sec:not(.alt) .checklist{background:var(--soft);box-shadow:none}.checklist li{display:flex;gap:10px;align-items:flex-start}.checklist svg{color:#fff;background:var(--accent);border-radius:50%;padding:3px;width:22px;height:22px;margin-top:3px}/* faq */.faq-list{display:grid;gap:12px}.faq{background:#fff;border-radius:var(--r);border:1px solid #e3e9f2;overflow:hidden}.sec:not(.alt) .faq{background:var(--soft);border-color:transparent}.faq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;cursor:pointer}.faq summary::-webkit-details-marker{display:none}.faq summary h3{margin:0;font-size:1.06rem}.faq summary svg{font-size:1.5rem;color:var(--accent);transition:transform .2s}.faq[open] summary svg{transform:rotate(180deg)}.faq-a{padding:0 22px 8px}.faq-a p{font-size:.98rem}/* embeds & maps */.embed{position:relative;width:100%;border-radius:var(--r);overflow:hidden;background:#e9eef5;box-shadow:0 18px 40px -26px rgba(10,25,60,.5)}.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.form-embed{aspect-ratio:auto!important;height:1500px}.form-embed iframe{position:static;height:100%}.form-card,.contact-card,.map-card{background:#fff;border-radius:var(--r);padding:30px;border:1px solid #e6ebf3}.sec:not(.alt) .form-card,.sec:not(.alt) .contact-card,.sec:not(.alt) .map-card{background:var(--soft);border-color:transparent}.map-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.embed-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px}.embed-cell h3{font-size:1.05rem}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}.contact-card h3{margin-top:1.2em}.addr{font-style:normal;margin-bottom:1em;line-height:1.6}.cline{display:flex;align-items:center;gap:8px;margin-bottom:.5em}.cline svg{color:var(--accent)}.svc-list{list-style:none;padding:0;margin:0 0 1em;display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:.96rem}.svc-list li{display:flex;align-items:center;gap:6px}.svc-list svg{color:var(--accent)}.route-line{display:flex;gap:8px;align-items:flex-start;background:var(--soft);padding:12px 14px;border-radius:10px;font-size:.96rem}.sec:not(.alt) .route-line{background:#fff}.route-line svg{color:var(--accent);margin-top:5px}.dl{margin:0 0 1.2em;display:grid;gap:12px}.dl div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding-bottom:12px;border-bottom:1px dashed #d7dfeb}.dl dt{font-weight:700;color:var(--navy);font-family:var(--fh)}.dl dd{margin:0}/* chips & citations */.chips{list-style:none;display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0}.chips a{display:inline-block;padding:9px 16px;border-radius:999px;background:#fff;border:1px solid #d9e1ee;text-decoration:none;color:var(--navy);font-weight:600;font-size:.93rem;transition:.15s}.sec:not(.alt) .chips a{background:var(--soft)}.chips a:hover{background:var(--accent);border-color:var(--accent);color:#fff}.related{padding:56px 0}.related-more{margin-top:22px}.cite-list{list-style:none;padding:0;margin:0;columns:4 220px;column-gap:24px;font-size:.92rem}.cite-list li{break-inside:avoid;padding:4px 0;border-bottom:1px solid #e3e9f2}.cite-list a{text-decoration:none;color:var(--ink)}.cite-list a:hover{color:var(--accent2)}/* cta band */.cta-band{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:64px 0}.cta-in{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}.cta-band h2{color:#fff;margin-bottom:.3em}.cta-band p{color:#d5def0;margin:0;max-width:640px}.cta-actions{display:flex;flex-wrap:wrap;gap:12px}/* footer */.site-footer{background:#081326;color:#b8c4d8;font-size:.95rem}.foot-grid{display:grid;grid-template-columns:1.2fr .9fr 1.5fr;gap:44px;padding:70px 0 50px}.brand-foot{color:#fff;margin-bottom:18px}.brand-foot img{background:#fff;border-radius:10px;padding:6px 10px;height:60px}.site-footer address{font-style:normal}.site-footer address p{display:flex;gap:10px;align-items:flex-start;margin-bottom:.7em}.site-footer address svg{color:var(--accent);margin-top:5px}.site-footer a{color:#dbe4f2;text-decoration:none}.site-footer a:hover{color:#fff;text-decoration:underline}.foot-h{color:#fff;font-size:1rem;text-transform:uppercase;letter-spacing:.1em;margin:0 0 14px}.foot-links,.foot-list{list-style:none;padding:0;margin:0 0 26px;display:grid;gap:8px}.foot-links.two{grid-template-columns:1fr 1fr;gap:8px 20px}.social{display:flex;gap:10px;margin-top:16px}.social a{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);font-size:1.1rem}.social a:hover{background:var(--accent);text-decoration:none}.foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding:18px 0;font-size:.86rem;color:#8d9ab2}.float-call{display:none}/* responsive */@media (max-width:1024px){.hero-in{grid-template-columns:1fr;padding:56px 0 64px;gap:32px}.hero-media{max-width:620px}.split,.steps-wrap,.contact-grid{grid-template-columns:1fr;gap:34px}.split.rev .split-copy{order:0}.steps-video{position:static}.foot-grid{grid-template-columns:1fr 1fr}.foot-locs{grid-column:1/-1}}@media (max-width:720px){body{font-size:16px}.sec{padding:60px 0}.hero-full .hero-in{padding:70px 0 80px}.hero-media::after{display:none}.map-grid,.embed-grid{grid-template-columns:1fr}.svc-grid,.feat-grid,.dest-grid,.area-grid{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr;gap:30px}.foot-links.two{grid-template-columns:1fr}.cta-in{flex-direction:column;align-items:flex-start}.btn-row .btn,.cta-actions .btn{flex:1 1 100%;justify-content:center}.form-embed{height:1750px}.svc-list{grid-template-columns:1fr}.dl div{grid-template-columns:1fr;gap:2px}.float-call{display:grid;place-items:center;position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:var(--accent);color:#fff;font-size:1.5rem;box-shadow:0 10px 24px -6px rgba(0,0,0,.4);z-index:40}.form-card,.contact-card,.map-card{padding:22px}}@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MovingCompany", "@id": "https://coder9653.github.io/617-boston-movers/#business", "name": "617 Boston Movers", "url": "https://coder9653.github.io/617-boston-movers/", "image": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXCLoNP0Dc2jBG8pAxv7RhG6IcKS8OqLza6YqO3M6bGZVhn_LKBSDKWbSXBdkRF_xexWqAhkZwwTWQdy7DSudWq50LYJlCDtWxOQkUxZFl7d24x5xuHsCB94r5H1MC9cWAOsjN-Ph91MuI=w1200-h800-p-k-no", "logo": "https://617bostonmovers.com/_astro/header-logo.FxUM5eWh_ZCwSXG.avif?dpl=6af671ce7c93c0214a4e428b", "telephone": "+1-617-208-4040", "email": "info@617bostonmovers.com", "address": {"@type": "PostalAddress", "streetAddress": "215 Condor Street", "addressLocality": "Boston", "addressRegion": "MA", "postalCode": "02128", "addressCountry": "US"}, "geo": {"@type": "GeoCoordinates", "latitude": 42.3824657, "longitude": -71.0322974}, "hasMap": "https://www.google.com/maps?cid=7486831917207027402", "sameAs": ["https://www.facebook.com/617bostonmovers/", "https://www.instagram.com/617bostonmovers/", "https://x.com/617BostonMovers", "https://www.youtube.com/watch?v=nixyj_7CkCs", "https://sites.google.com/view/617-boston-movers/"], "knowsAbout": ["Local Moving", "Residential Moving", "Commercial Moving", "Hourly Moving", "Interstate Moving", "Last-Minute Moving", "Packing Services", "Storage"]}, {"@type": "WebSite", "name": "617 Boston Movers", "url": "https://coder9653.github.io/617-boston-movers/"}]}</script>
 </head>
+<body class="hero-split cards-lift">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+ <div class="topbar"><div class="wrap topbar-in">
+  <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> 215 Condor Street, Boston, MA 02128</span>
+  <span class="tb-right"><a href="mailto:info@617bostonmovers.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg> info@617bostonmovers.com</a><a href="tel:+16172084040"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg> (617) 208-4040</a></span>
+ </div></div>
+ <div class="wrap nav-in">
+  <a class="brand" href="index.html"><img src="https://617bostonmovers.com/_astro/header-logo.FxUM5eWh_ZCwSXG.avif?dpl=6af671ce7c93c0214a4e428b" alt="617 Boston Movers logo" width="115" height="56"><span>617 Boston Movers</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/></svg></button>
+  <nav id="site-nav" class="site-nav" aria-label="Main">
+   <ul class="menu">
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li class="has-drop">
+     <button class="drop-btn" aria-expanded="false" aria-controls="loc-menu">Locations <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 8.6 12 13.2l4.6-4.6L18 10l-6 6-6-6z"/></svg></button>
+     <ul class="drop" id="loc-menu">
+<li><a href="locations/boston-to-florida-fl-movers.html">Boston To Florida Movers</a></li>
+<li><a href="locations/boston-to-maryland-movers.html">Boston To Maryland Movers</a></li>
+<li><a href="locations/boston-to-new-york-movers.html">Boston To New York Movers</a></li>
+<li><a href="locations/boston-to-new-jersey-movers.html">Boston To New Jersey Movers</a></li>
+<li><a href="locations/boston-to-north-carolina-movers.html">Boston To North Carolina Movers</a></li>
+<li><a href="locations/boston-to-new-hampshire-movers.html">Boston To New Hampshire Movers</a></li>
+<li><a href="locations/boston-to-maine-movers.html">Boston To Maine Movers</a></li>
+<li><a href="locations/boston-to-pennsylvania-movers.html">Boston To Pennsylvania Movers</a></li>
+<li><a href="locations/boston-to-connecticut-movers.html">Boston To Connecticut Movers</a></li>
+<li><a href="locations/boston-to-rhode-island-movers.html">Boston To Rhode Island Movers</a></li>
+     </ul>
+    </li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li class="nav-cta"><a class="btn btn-accent" href="tel:+16172084040"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg> Call Now</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+<main id="main">
+<section class="hero" style="--hero-img:url('https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXCLoNP0Dc2jBG8pAxv7RhG6IcKS8OqLza6YqO3M6bGZVhn_LKBSDKWbSXBdkRF_xexWqAhkZwwTWQdy7DSudWq50LYJlCDtWxOQkUxZFl7d24x5xuHsCB94r5H1MC9cWAOsjN-Ph91MuI=w1600-h900-p-k-no')">
+ <div class="wrap hero-in">
+  <div class="hero-copy">
+   <p class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston, MA moving company</p>
+   <h1>617 Boston Movers: Excellence from Start to Finish</h1>
+   <p class="lead">When it comes to a move you can count on, choose <strong>617 Boston Movers</strong>. We provide top-tier moving services designed around your unique needs. Our professional and highly trained team handles every detail with care — from meticulous packing and secure loading to safe transportation and smooth unloading. Whether you’re relocating within Boston, moving across the state, or heading interstate, we make the process efficient, organized, and stress-free. Get in touch with <strong>617 Boston Movers</strong> today for a moving experience you’ll feel confident about!</p>
+   <div class="btn-row"><a class="btn btn-accent btn-lg" href="tel:+16172084040"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg> Call (617) 208-4040</a><a class="btn btn-ghost-light btn-lg" href="contact.html#estimate">Request an Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+   <ul class="hero-facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> Residential &amp; commercial</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> Packing &amp; furniture protection</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> Storage options</li></ul>
+  </div>
+  <figure class="hero-media"><img class="hero-photo" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXCLoNP0Dc2jBG8pAxv7RhG6IcKS8OqLza6YqO3M6bGZVhn_LKBSDKWbSXBdkRF_xexWqAhkZwwTWQdy7DSudWq50LYJlCDtWxOQkUxZFl7d24x5xuHsCB94r5H1MC9cWAOsjN-Ph91MuI=w1000-h750-p-k-no" alt="617 Boston Movers moving truck and crew" width="1000" height="750" fetchpriority="high"></figure>
+ </div>
+</section>
+<section class="sec"><div class="wrap split"><div class="split-copy"><h2>Boston’s Trusted Movers: Professional &amp; Dependable</h2><p>Moving in or to Boston doesn’t have to be overwhelming — with <strong>617 Boston Movers</strong>, your relocation is in expert hands. Our friendly, dependable team is dedicated to delivering a smooth, stress-free experience from start to finish. We offer a full suite of moving solutions, including expert packing, secure storage, safe transportation, and efficient unloading. Whether you’re moving just a few streets away or across the country, we guarantee a seamless and well-coordinated transition.</p><p>At <strong>617 Boston Movers</strong>, your satisfaction is what drives us. We deliver prompt, tailored services for both residential and commercial clients — from apartments and family homes to offices and large-scale businesses. Our services also include in-house moves, last-minute scheduling, and flexible hourly options to fit your timeline. As the leading <a href="https://www.google.com/maps?cid=7486831917207027402">movers in Boston</a>, we pride ourselves on professionalism, precision, and unmatched customer care. Choose <strong>617 Boston Movers</strong> and make your next move a success.</p></div><div class="split-media"><img class="rounded" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RlK-xxFRnn1xUh-f8dsnWgZVOEdtwlWSE_gUm4HPtGSmCH8DRwHMRln6p-48lz7x69VeEhx_K9VxdaBYS6stP9RsJJxnhrjKZZtzJRHHOoEIvizMwv4ZGiBZ0qt-l256tT6zIFF92gnRX9=w900-h700-p-k-no" alt="Movers carrying furniture to the truck" width="900" height="700" loading="lazy" decoding="async"></div></div></section>
+<section class="sec alt"><div class="wrap"><div class="sec-head"><p class="kicker">What we do</p><h2>Our Reliable Services in Boston</h2></div><div class="svc-grid"><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TS7BRuYF02F28b0P2zLuUcyoIwBHT0Axcfy09d1E9OpFh_1dZfDWz-XcYzJdJsZMTrx7xYPi3hIvZeGQ_EfMY5DxlX1pv1aT6jSbQwrMNXe_G79P65YxwZnh3bkMQrzxVc51lAfe7SLzEC=w640-h420-p-k-no" alt="Local Movers – Mover wrapping furniture with protective blankets" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>Local Movers</h3><p>At 617 Boston Movers, we provide seamless interstate movers boston services, expertly handling every aspect of your move across state lines. Our experienced team ensures the safe transport and timely delivery of your belongings, no matter the distance. From meticulous packing and loading to efficient transportation and careful unloading, we oversee each step with precision and care. We prioritize customer satisfaction by maintaining clear communication and detailed planning, ensuring your move is managed smoothly. Trust our professional team for your interstate move from Boston to guarantee a successful transition to your new home, wherever it may be.</p></div></article><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qy7HlFupiRnvVYI1YO4lu_TN1KU3p-BSZpJ5NQhdnOnizqJU9JVCY6C4D39py_eioNaNlnhqsRD37P9hGaCmt2HpkKeR5RGr8ZUQj3sqCyXby0YbmP9CekZjFPAoglrRoe9nSi8e8AeEW5=w640-h420-p-k-no" alt="Long Distance Moves – Crew member preparing furniture for transport" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>Long Distance Moves</h3><p>At 617 Boston Movers, we offer reliable long-distance moving services, ensuring your belongings are safely transported to any destination. Our dedicated team meticulously manages every aspect of your move, from packing and loading to transportation and unloading. We use high-quality packing materials and advanced logistics to protect your items throughout the journey. Our commitment to customer satisfaction means we prioritize seamless and stress-free long-distance moves, allowing you to focus on settling into your new home. Trust our experienced movers to handle the complexities of long-distance relocations with professionalism and care, ensuring a smooth transition to your new location.</p></div></article><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rr2bRx-ZLLF1FVdIeC7wO_eHkg0x4eE4cu-trRkgUhw7QtbVmej0a_UMF-8Xr_Qrt2pSt39ZXTgAJlcE2SrSjMSNr2KSYVVDFzX3mpNYv3xaS1sA5mfzctiDM6U67plU_7Q3YW8ZGE9LDA=w640-h420-p-k-no" alt="Storage – Mover packing household items into boxes" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>Storage</h3><p>We provide secure and accessible storage solutions for your belongings, whether you need short-term or long-term storage. Our facilities are equipped with advanced security systems, including 24/7 monitoring and climate control, to keep your items safe and in optimal condition. Whether you're storing household items, business equipment, or valuable possessions, our storage services offer peace of mind and flexibility. Access your stored items as needed, knowing they are protected in our state-of-the-art facilities. Choose 617 Boston Movers for reliable storage solutions that cater to your unique needs and safeguard your belongings.</p></div></article><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QrvbhLfI3iK-S4-k-vECU1hUmgQcBFl6zxfXGEPRPkpj9JdYz_gzTbRAPllDf6-EML-SMxwpN3z1aj7j2-fJiLhEuvzPxTOpckVvSqaBfaB1B0dXitERLoduyo-ybXyE45qsFPiBTN6EqD=w640-h420-p-k-no" alt="Packing – Movers wrapping a sofa before loading" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>Packing</h3><p>Our professional packing services at 617 Boston Movers ensure your items are securely packed using high-quality materials. We understand the importance of protecting your belongings during a move, so we handle everything from fragile items to bulky furniture with care and precision. Our experienced packers use specialized techniques to wrap, cushion, and box your items, minimizing the risk of damage during transit. By entrusting us with your packing needs, you can save time and reduce stress, knowing your possessions are in expert hands. We provide comprehensive packing solutions that guarantee the safety and security of your items throughout the moving process.</p></div></article><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJ-MoWwSqN27EYgocll2WSaXZHWeZC-91LmWTamXSsKNi91fTwDa-9fzQFsW7NoIBO2N_JfygKlp-0apoMMuVSO3ct_NCHFCJkg8cou7-IwUvhDQB_DkX_K1QWk92EHy1Wvib2oeWW9d4=w640-h420-p-k-no" alt="Residential Moves – Mover protecting a table with moving blankets" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>Residential Moves</h3><p>617 Boston Movers offers comprehensive moving services for homes and apartments, tailored to meet your specific needs. Our experienced team handles every aspect of your residential move, from meticulous packing and careful loading to safe transportation and efficient unloading. We understand that moving can be stressful, so we strive to provide a seamless and hassle-free experience. Whether you're moving within Boston or to a new city, our commitment to professionalism and attention to detail ensures your belongings are handled with care. Trust us to make your residential move smooth and successful, allowing you to settle into your new home with ease.</p></div></article><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SB6xdxmoOBP9bJNU3D-K4gsnW9T35auksSrldyypa52oD2HbnAaCwBO3n0slu2uOtRhGMebol7LSBWOdj2_TUtletlFXBsgXajKM3YixYtR_f0adBqx4YNh6rUClL9GUhyQMmTA6TTjwqX=w640-h420-p-k-no" alt="Commercial Moving – Furniture wrapped and ready for the moving truck" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>Commercial Moving</h3><p>Our expert moving services for businesses and offices at 617 Boston Movers minimize downtime and ensure a smooth transition. We specialize in handling all types of commercial moves, including office relocations, equipment moves, and more. Our team understands the importance of maintaining business continuity, so we work efficiently to reduce disruptions to your operations. We use specialized equipment and techniques to handle office furniture, electronics, and sensitive documents with care. Our comprehensive commercial moving solutions are designed to meet the unique needs of your business, ensuring a successful move that allows you to get back to work quickly and efficiently.</p></div></article><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QLNAjxkolbeJIC5X55KC68tB6wpjsz4fvkcKPWYKJDn2GWCwfWEwLwYzz00DjMA4PoeJdqAv7iJLfXWXZJm9EylAw9_2oEp-33sggcvZyoEVpgcCwM_H6YkfNtLKb01yCUKTUjHoXEs51r=w640-h420-p-k-no" alt="In-house Moving – Blanket-wrapped dresser prepared for a move" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>In-house Moving</h3><p>Our in-house moving services are perfect for rearranging furniture or relocating items within your home or office. Whether you're redecorating, renovating, or simply need help moving heavy objects, our experienced team at 617 Boston Movers is here to assist. We handle your belongings with the utmost care, ensuring that items are moved safely and efficiently. Our professional movers are equipped with the right tools and techniques to navigate tight spaces and prevent damage to your property. Choose our in-house moving services for a convenient and stress-free solution to your internal moving needs, making rearranging your space easy and hassle-free.</p></div></article><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QIKVU23wC2OoOblPVTMNM7ZHI7_NNq3BKenpLbSnPs2KWVwywgp8i7Rzyc6-JkrzSvlNTiZdbirENOMLjBGUC09K4ooOhPv-3WoOQvd2PfiM_Bbx3JtBQL0_RUQMA4bm0rYkHfJhjlt4bW=w640-h420-p-k-no" alt="Interstate Moves – Shrink-wrapped furniture waiting to be loaded" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>Interstate Moves</h3><p>617 Boston Movers provides seamless interstate moving services, managing all the logistics of your move across state lines. Our experienced team ensures your items are transported safely and delivered on time, no matter the distance. We handle every aspect of the move, from packing and loading to transportation and unloading, with a focus on efficiency and care. Our commitment to customer satisfaction means we prioritize clear communication and meticulous planning, so you can trust us to handle the complexities of interstate relocations. Choose our professional interstate moving services for a smooth and successful move to your new home, wherever it may be.</p></div></article><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R6pP52VYjgWT0y1YWLQPYocDqY5hvMyHIrwEYIAJqhAIfZ2y8L5OPTSfcxwvGuihENom7enEzibsCMe5HsRxNoNo2LM73K2-MLXOFQZgZ2DpcVuX6FAIWHtVqT-1D74f5R4IDj8NwWvfuU=w640-h420-p-k-no" alt="Last Minute Moves – Mover carrying wrapped furniture outside a home" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>Last Minute Moves</h3><p>Our fast and reliable last-minute moving services at 617 Boston Movers are designed to accommodate unexpected moving needs. We understand that life can be unpredictable, so we respond quickly to your request, providing efficient and professional service even on short notice. Our experienced team is equipped to handle urgent moves with the same level of care and attention to detail as planned relocations. Whether it's a sudden job transfer, eviction, or any other last-minute situation, we ensure a smooth and stress-free move. Trust us to deliver prompt and reliable moving solutions when you need them most, without compromising on quality.</p></div></article><article class="svc-card"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QGlF1LPb3dTnv9f9bKLLlZ8UVJOrj2SzfkPE8kGyrNP41opnXh6OzHR-HLahPpEwgCx-PMWcgFRfX-UyEhZFnn-F9CLhrrNKD072nJlaRneBlQn29f1v00Lsvg2Eb5FlyBOs0Y7EZtJ6C6=w640-h420-p-k-no" alt="Hourly Moves – 617 Boston Movers crew working outdoors on moving day" width="640" height="420" loading="lazy" decoding="async"><div class="svc-body"><h3>Hourly Moves</h3><p>Our flexible hourly moving services at 617 Boston Movers allow you to pay only for the time you need. Whether you have a small move or just need help with specific tasks, we provide professional assistance on an hourly basis. This option is perfect for those looking to save money and only require help with certain aspects of their move. Our experienced movers handle your belongings with care, ensuring a smooth and efficient process. From packing and loading to transportation and unloading, we offer customized moving solutions that fit your schedule and budget. Choose our hourly moving services for flexible and cost-effective moving assistance.</p></div></article></div></div></section>
+<section class="sec" id="destinations"><div class="wrap"><div class="sec-head"><p class="kicker">Interstate moving</p><h2>Our Interstate Moving Destinations</h2><p>Moving out of Massachusetts? Choose your destination state to see the services, cities, route map and answers to common questions for that move.</p></div><div class="dest-grid"><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-florida-fl-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TS7BRuYF02F28b0P2zLuUcyoIwBHT0Axcfy09d1E9OpFh_1dZfDWz-XcYzJdJsZMTrx7xYPi3hIvZeGQ_EfMY5DxlX1pv1aT6jSbQwrMNXe_G79P65YxwZnh3bkMQrzxVc51lAfe7SLzEC=w600-h380-p-k-no" alt="Boston to Florida move – Mover wrapping furniture with protective blankets" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → Florida</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-florida-fl-movers.html">Florida</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To Florida Movers</p><p>Long-distance moves from Boston to Miami, Orlando, Tampa, Jacksonville and communities across the Sunshine State.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-florida-fl-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-maryland-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QrvbhLfI3iK-S4-k-vECU1hUmgQcBFl6zxfXGEPRPkpj9JdYz_gzTbRAPllDf6-EML-SMxwpN3z1aj7j2-fJiLhEuvzPxTOpckVvSqaBfaB1B0dXitERLoduyo-ybXyE45qsFPiBTN6EqD=w600-h380-p-k-no" alt="Boston to Maryland move – Movers wrapping a sofa before loading" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → Maryland</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-maryland-movers.html">Maryland</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To Maryland Movers</p><p>Interstate moves from Boston to Baltimore, Annapolis, Rockville, Frederick and towns across Maryland.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-maryland-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-new-york-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QLNAjxkolbeJIC5X55KC68tB6wpjsz4fvkcKPWYKJDn2GWCwfWEwLwYzz00DjMA4PoeJdqAv7iJLfXWXZJm9EylAw9_2oEp-33sggcvZyoEVpgcCwM_H6YkfNtLKb01yCUKTUjHoXEs51r=w600-h380-p-k-no" alt="Boston to New York move – Blanket-wrapped dresser prepared for a move" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → New York</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-new-york-movers.html">New York</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To New York Movers</p><p>Moves from Boston to New York City, Albany, Buffalo, Syracuse, Rochester and towns across New York State.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-new-york-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-new-jersey-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QGlF1LPb3dTnv9f9bKLLlZ8UVJOrj2SzfkPE8kGyrNP41opnXh6OzHR-HLahPpEwgCx-PMWcgFRfX-UyEhZFnn-F9CLhrrNKD072nJlaRneBlQn29f1v00Lsvg2Eb5FlyBOs0Y7EZtJ6C6=w600-h380-p-k-no" alt="Boston to New Jersey move – 617 Boston Movers crew working outdoors on moving day" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → New Jersey</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-new-jersey-movers.html">New Jersey</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To New Jersey Movers</p><p>Relocations from Boston to Jersey City, Newark, Hoboken, Princeton, Edison and the rest of the Garden State.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-new-jersey-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-north-carolina-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SjoWEoiDTHZs4t3bsqAZy7bpV8tMRaRnKwciOyrvYpDRnYx7mzFPKPT8tlJ6NSb3afnsh0SWEkAqPPxAGYZ-r6QyWRsztiZ3atHiXkR3iHUb2fjmBuOUPozav60L6NSWrwvcDeivFr0Is=w600-h380-p-k-no" alt="Boston to North Carolina move – Furniture being loaded up the truck ramp" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → North Carolina</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-north-carolina-movers.html">North Carolina</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To North Carolina Movers</p><p>Long-distance moves from Boston to Charlotte, Raleigh, Durham, Greensboro, Wilmington and Asheville.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-north-carolina-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-new-hampshire-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIxNIE4vA1a_Igx2JAJVFWnf_OdaxByuORxwJxnymbm4buTrnfm5PMbutb5Zy47QziqmVRJlwQdPIta0mMEga1dDPZFfiZniaQYzge47JxNn68oz34FbQFCM-tde1TgXsTbTobVg=w600-h380-p-k-no" alt="Boston to New Hampshire move – Crew wrapping household furniture" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → New Hampshire</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-new-hampshire-movers.html">New Hampshire</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To New Hampshire Movers</p><p>Moves from Boston to Manchester, Nashua, Portsmouth, Concord and quieter towns across New Hampshire.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-new-hampshire-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-maine-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SDCfXwfMhkASUEjihvgne9d41_0LqafhfTgVla31LLtnyR4vNHwEtKv66T-hQp9F_H8-ME_oDTxFdOjJE-h00_ybqeGg0HocwGDgXZXlAUxgMVUecfcwgbc3bIhxVPMcUmnIrmiV-MkK4J=w600-h380-p-k-no" alt="Boston to Maine move – Mover carrying a packed box" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → Maine</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-maine-movers.html">Maine</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To Maine Movers</p><p>Moves from Boston to Portland, Lewiston, Bangor, Augusta and coastal and inland towns throughout Maine.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-maine-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-pennsylvania-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T0clpBs6rjKUYuq2KulgIp0d2ogyGDNwlz_7jespkVsUwtCNT4JTfiWm2aVIjk44kImwIsEUYcyo4DDp3wZxYI0F5K7neD6ChuXQaeCpllwtcnxZ00CwIlCg7Uyq5JT6T5MYbyRJFgfSbB=w600-h380-p-k-no" alt="Boston to Pennsylvania move – Mover arranging the load inside the truck" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → Pennsylvania</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-pennsylvania-movers.html">Pennsylvania</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To Pennsylvania Movers</p><p>Interstate moves from Boston to Philadelphia, Pittsburgh, Harrisburg, Allentown and 20 Pennsylvania destinations.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-pennsylvania-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-connecticut-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQFJh6pYdw4i0-01jH7E44y5rrXYfOnjYUFURvFjKfABhxbXgheFdSE637KeNsTkftBBRR9zgt1yO1ZO7RSJ-RQ2-HsXvskwnO81ViEtqCliytGqW_dqA5yyQZJGmM3tHdIxf9Mg=w600-h380-p-k-no" alt="Boston to Connecticut move – Mover protecting a mattress for transport" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → Connecticut</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-connecticut-movers.html">Connecticut</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To Connecticut Movers</p><p>Moves from Boston to Hartford, Stamford, New Haven, Greenwich and 20 Connecticut cities and towns.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-connecticut-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article><article class="dest-card">
+ <a class="dest-media" href="locations/boston-to-rhode-island-movers.html" tabindex="-1" aria-hidden="true"><img class="" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qst_OCG8sgaIDvBifYaL9V--aBzQjlDiuu9xhqNIcoxF5j3SQEUtb9n9sk-V_DwMraGGQIgtMuVM4_xMrTcDbnxy73jdZtHO6m_gbOv62GNfaerOr6K6A6LI67S8oYL0FGxvecxxeE0tSF=w600-h380-p-k-no" alt="Boston to Rhode Island move – Wrapped furniture moved on a dolly" width="600" height="380" loading="lazy" decoding="async"><span class="dest-tag">Boston → Rhode Island</span></a>
+ <div class="dest-body"><h3><a href="locations/boston-to-rhode-island-movers.html">Rhode Island</a></h3><p class="route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5zm-1.5 1.5L20.46 12H17V9.5zM7 17.5A1.5 1.5 0 1 1 7 14.5a1.5 1.5 0 0 1 0 3zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Boston To Rhode Island Movers</p><p>Moves from Boston to Providence, Warwick, Cranston, Newport and nearly 30 Rhode Island communities.</p>
+ <a class="btn btn-small btn-outline" href="locations/boston-to-rhode-island-movers.html">View Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div>
+</article></div></div></section>
+<section class="sec alt" id="estimate"><div class="wrap narrow"><div class="sec-head"><p class="kicker">Free estimate</p><h2>Get in Touch</h2><p>Tell us about your move using the form below, or call <a href="tel:+16172084040">(617) 208-4040</a>.</p></div><div class="form-card"><div class="embed form-embed" style="aspect-ratio:auto"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSek8KUhlE82oV1BviXfDq96F4z3q3LXTaOC-HIf2UmwtC2wrA/viewform?embedded=true" title="617 Boston Movers estimate request form" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></div></section>
+<section class="sec"><div class="wrap split"><div class="split-copy"><h2>Local Boston Movers: Your Convenient Moving Solution</h2><p>Looking for reliable movers in the Boston, MA area? We're here to make your move effortless! As trusted local Boston movers, we provide quick and dependable moving services. Our team handles your belongings with the utmost care and professionalism, ensuring a smooth transition. With our competitive rates, professional relocation is accessible to everyone. Whether you're moving an apartment or an office, we've got you covered. Choose our Boston moving services for a hassle-free and convenient experience.</p><p>Trust is essential when moving, and we're committed to earning yours. Our Boston area movers assist individuals, families, and businesses with relocating furniture, equipment, and other heavy items. We manage everything from packing and loading to transporting, unloading, and unpacking.</p><p>Say goodbye to moving stress! Our dedicated team ensures a seamless relocation process from start to finish. While you settle into your new space, we take care of all the details. Choose local Boston movers for a worry-free moving day.</p></div><div class="split-media"><img class="rounded" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ttz6_lFGQJfy1vBK8FxTRxWxbfv0jxO51HXfPWFbzr8vjDvOFRm4Vjf13rJdIKSQkT_-AMwxuO2Nt3PPBxXsKRSjWhHThhQECJ6qWnwXhhfGA7cWuD4pSAm4ZlYU1nbLxiST4m_s54utc=w900-h700-p-k-no" alt="Padded furniture prepared for transportation" width="900" height="700" loading="lazy" decoding="async"></div></div></section>
+<section class="sec alt"><div class="wrap"><div class="sec-head"><p class="kicker">Company resources</p><h2>Plan Your Move With Our Shared Resources</h2></div><div class="embed-grid"><div class="embed-cell"><h3>Google Slides</h3><div class="embed " style="aspect-ratio:16/10"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQAWSsbGtSS408-vWJ_ab799bAfOESFUKYEJUhrN53CueupmL3g7XzWeZjGbHvhiu0UMyhh3tJH3QFj/embed?start=true&amp;loop=true&amp;delayms=3000" title="Google Slides" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div><div class="embed-cell"><h3>Google Drawings</h3><div class="embed " style="aspect-ratio:16/10"><iframe src="https://docs.google.com/drawings/d/10o_RUal0YMttbx7QSRExWIfvXZ6ti84Ay20rztoqKmU/edit" title="Google Drawings" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div><div class="embed-cell"><h3>Google Calendar</h3><div class="embed " style="aspect-ratio:16/10"><iframe src="https://calendar.google.com/calendar/embed?src=617bostonmover%40gmail.com" title="Google Calendar" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></div></div></section>
+<section class="sec"><div class="wrap split"><div class="split-copy"><h2>Affordable Movers Boston: Quality Service at a Great Price</h2><p>Looking for budget-friendly yet high-quality moving services? Contact 617 Boston Movers today! As professional and economical Boston movers, we aim to provide exceptional service at a great price. Whether you're moving locally or across the state, we offer competitive rates without compromising on service quality.</p><p>Our experienced team and attention to detail ensure your move is handled with professionalism. We deliver smooth, affordable moving services without the hassle and high costs associated with expensive companies.</p><p>We strive to exceed your expectations. No matter your budget, you deserve an experienced Boston moving company. 617 Boston Movers is proud to offer top-notch services at reasonable prices, ensuring your satisfaction with our work.</p><p>We are your go-to movers and packers in Boston, making your move hassle-free and cost-effective. Utilizing the latest equipment and methods, we ensure the safe transport of your belongings, making us one of the most reliable moving companies in Boston, MA.</p><div class="btn-row"><a class="btn btn-accent btn-lg" href="tel:+16172084040"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg> Call (617) 208-4040</a><a class="btn btn-ghost btn-lg" href="contact.html#estimate">Request an Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg></a></div></div><div class="split-media"><div class="embed " style="aspect-ratio:16/9"><iframe src="https://www.youtube.com/embed/nixyj_7CkCs" title="617 Boston Movers video" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></div></section>
+<section class="sec alt"><div class="wrap"><div class="sec-head"><h2>Google Docs</h2></div><div class="embed " style="aspect-ratio:16/10"><iframe src="https://docs.google.com/document/d/e/2PACX-1vTO45XgT3B2ZSy55lIuKC4mE7p74zxa7GgEbh79rQKhB7KMU1qB2ChPY7Um2NcdaXpemtufmbwJyZYC/pub?embedded=true" title="Google Docs" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></section>
+<section class="sec"><div class="wrap"><div class="sec-head"><p class="kicker">Why us</p><h2>Why Choose 617 Boston Movers?</h2><p>Wondering what makes us stand out? It's simple—experience, dedication, and a commitment to our clients. Serving the Boston community, we've built a reputation for excellence, one successful move at a time. We offer distinct advantages that set us apart from other Boston moving companies. When you choose us, you're choosing:</p></div><div class="feat-grid"><article class="feat"><span class="feat-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><h3>Experience and Expertise</h3><p>617 Boston Movers brings years of experience in residential and commercial relocations, ensuring precision and efficiency. Our skilled movers in Boston, Massachusetts, are dedicated to delivering top-notch customer service, handling every aspect of your move from packing to transportation with professionalism and care.</p></article><article class="feat"><span class="feat-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><h3>Fair Pricing</h3><p>We maintain transparent pricing with no surprise fees, keeping your budget intact. Our attentive staff arrives promptly and respects your time, offering additional insurance options for added peace of mind.</p></article><article class="feat"><span class="feat-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><h3>Local Moving Knowledge</h3><p>As a trusted Boston moving company, we possess extensive knowledge of the local area. Navigating city streets is second nature to us, ensuring the secure and timely delivery of your belongings. At 617 Boston Movers, client satisfaction is paramount—we go above and beyond to ensure a smooth, stress-free move.</p></article><article class="feat"><span class="feat-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><h3>Personalized Service</h3><p>Recognizing that every move is unique, we tailor our services to meet your specific needs. Our movers arrive punctually, keeping your schedule on track, and ensuring your complete satisfaction is our top priority. Choose 617 Boston Movers for a moving experience that exceeds expectations.</p></article></div></div></section>
+<section class="sec alt"><div class="wrap"><div class="sec-head"><p class="kicker">Our network</p><h2>Find Us online at</h2></div><ul class="chips"><li><a href="https://617-boston-movers.netlify.app/" target="_blank" rel="noopener">Netlify</a></li><li><a href="https://boston-movers-rkctu.ondigitalocean.app/" target="_blank" rel="noopener">DigitalOcean</a></li><li><a href="https://storage.googleapis.com/617-boston-movers/Google%20Cloud/index.html" target="_blank" rel="noopener">Google Cloud</a></li><li><a href="https://vercel-617-boston-movers.vercel.app/index.html" target="_blank" rel="noopener">Vercel</a></li><li><a href="https://617-boston-movers-coder9653-96280d946927e3542a87eb30a162a3066d7.gitlab.io/" target="_blank" rel="noopener">GitLab</a></li><li><a href="https://cf-617-boston-movers.pages.dev/" target="_blank" rel="noopener">Cloudflare</a></li><li><a href="https://617-boston-movers.surge.sh/" target="_blank" rel="noopener">Surge</a></li><li><a href="https://f005.backblazeb2.com/file/617-boston-movers/index.html" target="_blank" rel="noopener">Backblaze</a></li><li><a href="https://boston-movers-617.web.app" target="_blank" rel="noopener">Firebase</a></li><li><a href="https://sites.google.com/view/617-boston-movers/" target="_blank" rel="noopener">Google Sites</a></li></ul></div></section>
+<section class="sec"><div class="wrap"><div class="sec-head"><p class="kicker">Visit or call</p><h2>Find Us on Google</h2><p>215 Condor Street, Boston, MA 02128 · <a href="tel:+16172084040">(617) 208-4040</a></p></div><div class="map-grid"><div class="embed " style="aspect-ratio:4/3"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5893.749462456503!2d-71.032297!3d42.387815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3719355261955%3A0x67e691f6362e7eca!2s617%20Boston%20Movers!5e0!3m2!1sen!2sus!4v1720464341276!5m2!1sen!2sus" title="617 Boston Movers on Google Maps" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div><div class="embed " style="aspect-ratio:4/3"><iframe src="https://www.google.com/maps/d/embed?mid=1GHzoZBwtB8tQtACdnKmW56nB8b1Ykcw&amp;ehbc=2E312F&amp;noprof=1" title="617 Boston Movers location map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></div></section>
+<section class="cta-band"><div class="wrap cta-in">
+ <div><h2>Talk to 617 Boston Movers about your move</h2><p>Local, interstate, packing and storage services from our base at 215 Condor Street in East Boston.</p></div>
+ <div class="cta-actions"><a class="btn btn-white btn-lg" href="tel:+16172084040"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg> (617) 208-4040</a><a class="btn btn-ghost-light btn-lg" href="mailto:info@617bostonmovers.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg> Email Us</a></div>
+</div></section>
+</main>
+<footer class="site-footer">
+ <div class="wrap foot-grid">
+  <div class="foot-brand">
+   <a class="brand brand-foot" href="index.html"><img src="https://617bostonmovers.com/_astro/header-logo.FxUM5eWh_ZCwSXG.avif?dpl=6af671ce7c93c0214a4e428b" alt="617 Boston Movers logo" width="115" height="56" loading="lazy"><span>617 Boston Movers</span></a>
+   <address>
+    <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> <span>215 Condor Street,<br>Boston, MA 02128</span></p>
+    <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg> <a href="tel:+16172084040">(617) 208-4040</a></p>
+    <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg> <a href="mailto:info@617bostonmovers.com">info@617bostonmovers.com</a></p>
+   </address>
+   <div class="social"><a href="https://www.facebook.com/617bostonmovers/" rel="noopener" target="_blank" aria-label="617 Boston Movers on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8V6.5c0-.7.3-1.5 1.5-1.5H17V2h-2.6C11.6 2 11 4 11 5.8V8H9v3h2v11h3V11h2.6l.4-3z"/></svg></a><a href="https://www.instagram.com/617bostonmovers/" rel="noopener" target="_blank" aria-label="617 Boston Movers on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7c-.1-1.6-.4-3-1.6-4.3S17.6 1.1 16 1C14.4 1 9.6 1 8 1 6.4 1.1 5 1.4 3.7 2.7S2.1 5.4 2 7c-.1 1.6-.1 8.4 0 10 .1 1.6.4 3 1.7 4.3S6.4 22.9 8 23c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.3-1.7s1.5-2.7 1.6-4.3c.1-1.6.1-8.4 0-10zm-2.1 12a3.3 3.3 0 0 1-1.8 1.8c-1.3.5-4.3.4-6 .4s-4.7.1-6-.4A3.3 3.3 0 0 1 4.2 19c-.5-1.3-.4-4.3-.4-6s-.1-4.7.4-6A3.3 3.3 0 0 1 6 5.2c1.3-.5 4.3-.4 6-.4s4.7-.1 6 .4A3.3 3.3 0 0 1 19.8 7c.5 1.3.4 4.3.4 6s.1 4.7-.4 6z"/></svg></a><a href="https://x.com/617BostonMovers" rel="noopener" target="_blank" aria-label="617 Boston Movers on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a><a href="https://www.youtube.com/watch?v=nixyj_7CkCs" rel="noopener" target="_blank" aria-label="617 Boston Movers on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3z"/></svg></a><a href="https://www.google.com/maps?cid=7486831917207027402" rel="noopener" target="_blank" aria-label="617 Boston Movers on Google Maps"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></a></div>
+  </div>
+  <div><h2 class="foot-h">Company</h2><ul class="foot-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+   <h2 class="foot-h">Services</h2><ul class="foot-list"><li>Local Moving</li><li>Residential Moving</li><li>Commercial Moving</li><li>Hourly Moving</li><li>Interstate Moving</li><li>Last-Minute Moving</li><li>Packing Services</li><li>Storage</li></ul></div>
+  <div class="foot-locs"><h2 class="foot-h">Interstate Moving Routes</h2><ul class="foot-links two"><li><a href="locations/boston-to-florida-fl-movers.html">Boston To Florida Movers</a></li>
+<li><a href="locations/boston-to-maryland-movers.html">Boston To Maryland Movers</a></li>
+<li><a href="locations/boston-to-new-york-movers.html">Boston To New York Movers</a></li>
+<li><a href="locations/boston-to-new-jersey-movers.html">Boston To New Jersey Movers</a></li>
+<li><a href="locations/boston-to-north-carolina-movers.html">Boston To North Carolina Movers</a></li>
+<li><a href="locations/boston-to-new-hampshire-movers.html">Boston To New Hampshire Movers</a></li>
+<li><a href="locations/boston-to-maine-movers.html">Boston To Maine Movers</a></li>
+<li><a href="locations/boston-to-pennsylvania-movers.html">Boston To Pennsylvania Movers</a></li>
+<li><a href="locations/boston-to-connecticut-movers.html">Boston To Connecticut Movers</a></li>
+<li><a href="locations/boston-to-rhode-island-movers.html">Boston To Rhode Island Movers</a></li></ul></div>
+ </div>
+ <div class="foot-bottom"><div class="wrap">© 2026 617 Boston Movers · 215 Condor Street, Boston, MA 02128 · <a href="tel:+16172084040">(617) 208-4040</a></div></div>
+</footer>
+<a class="float-call" href="tel:+16172084040" aria-label="Call 617 Boston Movers"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg></a>
+<script>(function () {
+  var header = document.querySelector('.site-header');
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('site-nav');
+  var drop = document.querySelector('.has-drop');
+  var dropBtn = drop && drop.querySelector('.drop-btn');
 
-<body>
-    <header id="header">
-        <div class="logo-container">
-            <div class="logo">
-                <img src="https://617bostonmovers.com/wp-content/uploads/2023/11/617-Boston-Movers-logo.png.webp"
-                    alt="617 Boston Movers">
-            </div>
-            <div class="website-name">617 Boston Movers</div>
-        </div>
-        <div class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav id="nav-menu">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="hero">
-        <h1>617 Boston Movers</h1>
-        <a href="tel:+16172084040"><button>Call Now</button></a>
-    </div>
+  function setHH() {
+    if (header) document.documentElement.style.setProperty('--hh', header.getBoundingClientRect().bottom + 'px');
+  }
+  setHH();
+  window.addEventListener('resize', setHH);
+  window.addEventListener('scroll', setHH, { passive: true });
 
-    <div class="container">
-        <div class="section">
-            <h2 style=" color: #4630D2; font-size: 26px;">617 Boston Movers: Excellence from Start to Finish</h2> <br>
-<p>
-    When it comes to a move you can count on, choose <strong>617 Boston Movers</strong>. 
-    We provide top-tier moving services designed around your unique needs. 
-    Our professional and highly trained team handles every detail with care — 
-    from meticulous packing and secure loading to safe transportation and smooth unloading. 
-    Whether you’re relocating within Boston, moving across the state, or heading interstate, 
-    we make the process efficient, organized, and stress-free. 
-    Get in touch with <strong>617 Boston Movers</strong> today for a moving experience you’ll feel confident about!
-</p>
-<div class="line"></div>
-</div>
-
-<div class="section">
-    <div class="content-wrapper">
-        <div class="content">
-            <h2 style="color: #4630D2; font-size: 26px;">Boston’s Trusted Movers: Professional & Dependable</h2>
-            <br>
-            <p>
-                Moving in or to Boston doesn’t have to be overwhelming — with <strong>617 Boston Movers</strong>, 
-                your relocation is in expert hands. Our friendly, dependable team is dedicated to delivering a smooth, 
-                stress-free experience from start to finish. We offer a full suite of moving solutions, 
-                including expert packing, secure storage, safe transportation, and efficient unloading. 
-                Whether you’re moving just a few streets away or across the country, 
-                we guarantee a seamless and well-coordinated transition.
-            </p>
-            <br>
-            <p>
-                At <strong>617 Boston Movers</strong>, your satisfaction is what drives us. 
-                We deliver prompt, tailored services for both residential and commercial clients — 
-                from apartments and family homes to offices and large-scale businesses. 
-                Our services also include in-house moves, last-minute scheduling, and flexible hourly options 
-                to fit your timeline. As the leading 
-                <a href="https://www.google.com/maps?cid=7486831917207027402" style="text-decoration: none; color: #007bff;">
-                    movers in Boston
-                </a>, we pride ourselves on professionalism, precision, and unmatched customer care. 
-                Choose <strong>617 Boston Movers</strong> and make your next move a success.
-            </p>
-                </div>
-                <div class="image-container">
-                    <img src="https://lh5.googleusercontent.com/p/AF1QipPETOCUukuxeJomFCbF7rJTblTL5QIfzuVtmNvy=w141-h235-n-k-no-nu"
-                        alt="Moving Services">
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="section">
-            <h2 style="color: #4630D2; font-size: 26px;">Our Reliable Services in Boston</h2> <br>
-
-            <div class="section">
-                <h3>Local Movers</h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>At 617 Boston Movers, we provide seamless interstate movers boston services,
-                            expertly handling every
-                            aspect of your move across state lines. Our experienced team ensures the safe transport and
-                            timely delivery of your belongings, no matter the distance. From meticulous packing and
-                            loading to efficient transportation and careful unloading, we oversee each step with
-                            precision and care. We prioritize customer satisfaction by maintaining clear communication
-                            and detailed planning, ensuring your move is managed smoothly. Trust our professional team
-                            for your interstate move from Boston to guarantee a successful transition to your new home,
-                            wherever it may be.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipOLs1DYl41fAwy5rVghbi78fcsPP5pQmu3bvcWA=s1360-w1360-h1020"
-                            alt="Local Movers">
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h3>Long Distance Moves
-                </h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>At 617 Boston Movers, we offer reliable long-distance moving services, ensuring your
-                            belongings are safely transported to any destination. Our dedicated team meticulously
-                            manages every aspect of your move, from packing and loading to transportation and unloading.
-                            We use high-quality packing materials and advanced logistics to protect your items
-                            throughout the journey. Our commitment to customer satisfaction means we prioritize seamless
-                            and stress-free long-distance moves, allowing you to focus on settling into your new home.
-                            Trust our experienced movers to handle the complexities of long-distance relocations with
-                            professionalism and care, ensuring a smooth transition to your new location.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipNlOlEa10or6xj_6ocZkRVQvSzFFmvDM-6G9Nw5=s1360-w1360-h1020"
-                            alt="Long Distance Moves
-                            ">
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="section">
-                <h3>Storage
-                </h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>We provide secure and accessible storage solutions for your belongings, whether you need
-                            short-term or long-term storage. Our facilities are equipped with advanced security systems,
-                            including 24/7 monitoring and climate control, to keep your items safe and in optimal
-                            condition. Whether you're storing household items, business equipment, or valuable
-                            possessions, our storage services offer peace of mind and flexibility. Access your stored
-                            items as needed, knowing they are protected in our state-of-the-art facilities. Choose 617
-                            Boston Movers for reliable storage solutions that cater to your unique needs and safeguard
-                            your belongings.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipPVAm03gD5XAleCUEoKBpBfvJ_fgmyh3l08szcp=s680-w680-h510"
-                            alt="Storage
-                            ">
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="section">
-                <h3>Packing
-                </h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>Our professional packing services at 617 Boston Movers ensure your items are securely packed
-                            using high-quality materials. We understand the importance of protecting your belongings
-                            during a move, so we handle everything from fragile items to bulky furniture with care and
-                            precision. Our experienced packers use specialized techniques to wrap, cushion, and box your
-                            items, minimizing the risk of damage during transit. By entrusting us with your packing
-                            needs, you can save time and reduce stress, knowing your possessions are in expert hands. We
-                            provide comprehensive packing solutions that guarantee the safety and security of your items
-                            throughout the moving process.</p>
-
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipNp5S_GaI6J7OEL0qjeW14bVnys2_PQgk9tOyij=s1360-w1360-h1020"
-                            alt="Packing">
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h3>Residential Moves
-                </h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>617 Boston Movers offers comprehensive moving services for homes and apartments, tailored to
-                            meet your specific needs. Our experienced team handles every aspect of your residential
-                            move, from meticulous packing and careful loading to safe transportation and efficient
-                            unloading. We understand that moving can be stressful, so we strive to provide a seamless
-                            and hassle-free experience. Whether you're moving within Boston or to a new city, our
-                            commitment to professionalism and attention to detail ensures your belongings are handled
-                            with care. Trust us to make your residential move smooth and successful, allowing you to
-                            settle into your new home with ease.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh5.googleusercontent.com/p/AF1QipNQLS5HPJnW9oTZwjTFXACkGMbKKbxX5yzle52s=w141-h141-n-k-no-nu"
-                            alt="Residential Moves">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="section">
-                <h3>Commercial Moving
-                </h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>
-                            Our expert moving services for businesses and offices at 617 Boston Movers minimize downtime
-                            and ensure a smooth transition. We specialize in handling all types of commercial moves,
-                            including office relocations, equipment moves, and more. Our team understands the importance
-                            of maintaining business continuity, so we work efficiently to reduce disruptions to your
-                            operations. We use specialized equipment and techniques to handle office furniture,
-                            electronics, and sensitive documents with care. Our comprehensive commercial moving
-                            solutions are designed to meet the unique needs of your business, ensuring a successful move
-                            that allows you to get back to work quickly and efficiently.
-                        </p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipNgOp7uJFtKbT-ddEE9VP7Muf_Jk4toW3glgPVD=s680-w680-h510"
-                            alt="Packing">
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="section">
-                <h3>In-house Moving</h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>Our in-house moving services are perfect for rearranging furniture or relocating items within
-                            your home or office. Whether you're redecorating, renovating, or simply need help moving
-                            heavy objects, our experienced team at 617 Boston Movers is here to assist. We handle your
-                            belongings with the utmost care, ensuring that items are moved safely and efficiently. Our
-                            professional movers are equipped with the right tools and techniques to navigate tight
-                            spaces and prevent damage to your property. Choose our in-house moving services for a
-                            convenient and stress-free solution to your internal moving needs, making rearranging your
-                            space easy and hassle-free.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipO-pQOfN7NCepFSkUpB6vegFAdcisafp3u19Qpu=s680-w680-h510"
-                            alt="In-house Moving">
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h3>Interstate Moves</h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>617 Boston Movers provides seamless interstate moving services, managing all the logistics of
-                            your move across state lines. Our experienced team ensures your items are transported safely
-                            and delivered on time, no matter the distance. We handle every aspect of the move, from
-                            packing and loading to transportation and unloading, with a focus on efficiency and care.
-                            Our commitment to customer satisfaction means we prioritize clear communication and
-                            meticulous planning, so you can trust us to handle the complexities of interstate
-                            relocations. Choose our professional interstate moving services for a smooth and successful
-                            move to your new home, wherever it may be.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh5.googleusercontent.com/p/AF1QipNgP69qgQadwP2hfMzKMRxfckVVubU_AjNZgesx=w141-h176-n-k-no-nu"
-                            alt="Interstate Moving">
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="section">
-                <h3>Last Minute Moves</h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>
-                            Our fast and reliable last-minute moving services at 617 Boston Movers are designed to
-                            accommodate unexpected moving needs. We understand that life can be unpredictable, so we
-                            respond quickly to your request, providing efficient and professional service even on short
-                            notice. Our experienced team is equipped to handle urgent moves with the same level of care
-                            and attention to detail as planned relocations. Whether it's a sudden job transfer,
-                            eviction, or any other last-minute situation, we ensure a smooth and stress-free move. Trust
-                            us to deliver prompt and reliable moving solutions when you need them most, without
-                            compromising on quality.
-                        </p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipNgOp7uJFtKbT-ddEE9VP7Muf_Jk4toW3glgPVD=s680-w680-h510"
-                            alt="Last Minute Moves">
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h3>Hourly Moves</h3> <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>Our flexible hourly moving services at 617 Boston Movers allow you to pay only for the time
-                            you need. Whether you have a small move or just need help with specific tasks, we provide
-                            professional assistance on an hourly basis. This option is perfect for those looking to save
-                            money and only require help with certain aspects of their move. Our experienced movers
-                            handle your belongings with care, ensuring a smooth and efficient process. From packing and
-                            loading to transportation and unloading, we offer customized moving solutions that fit your
-                            schedule and budget. Choose our hourly moving services for flexible and cost-effective
-                            moving assistance.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipPETOCUukuxeJomFCbF7rJTblTL5QIfzuVtmNvy=s680-w680-h510"
-                            alt="Hourly Moves">
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Get in Touch</h2>
-                <div class="google-form">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSek8KUhlE82oV1BviXfDq96F4z3q3LXTaOC-HIf2UmwtC2wrA/viewform?embedded=true"
-                        width="100%" height="2230" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </div>
-            </div>
-            <div class="section">
-                <h2 style="color: #4630D2; font-size: 26px;">Local Boston Movers: Your Convenient Moving Solution</h2>
-                <br>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <p>Looking for reliable movers in the Boston, MA area? We're here to make your move effortless!
-                            As trusted local Boston movers, we provide quick and dependable moving services. Our team
-                            handles your belongings with the utmost care and professionalism, ensuring a smooth
-                            transition. With our competitive rates, professional relocation is accessible to everyone.
-                            Whether you're moving an apartment or an office, we've got you covered. Choose our Boston
-                            moving services for a hassle-free and convenient experience.</p>
-                        <br>
-                        <p>Trust is essential when moving, and we're committed to earning yours. Our Boston area movers
-                            assist individuals, families, and businesses with relocating furniture, equipment, and other
-                            heavy items. We manage everything from packing and loading to transporting, unloading, and
-                            unpacking.</p>
-                        <br>
-                        <p>Say goodbye to moving stress! Our dedicated team ensures a seamless relocation process from
-                            start to finish. While you settle into your new space, we take care of all the details.
-                            Choose local Boston movers for a worry-free moving day.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipOFH5FsyfgGxcoWd-n6E9ktiGxb3jfFQJdG7r9g=s680-w680-h510"
-                            alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- section 6 -->
-        <div class="line"></div>
-        <div class="section">
-            <div class="section">
-                <h3>Google Slides</h3>
-                <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vQAWSsbGtSS408-vWJ_ab799bAfOESFUKYEJUhrN53CueupmL3g7XzWeZjGbHvhiu0UMyhh3tJH3QFj/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0" width="700" height="400"></iframe>
-            </div>
-
-            <div class="section">
-                <h3>Google Drawings</h3>
-                <iframe src="https://docs.google.com/drawings/d/10o_RUal0YMttbx7QSRExWIfvXZ6ti84Ay20rztoqKmU/edit"
-                    alt="Google Drawing" style="height: 400px; width: 800px;"> </iframe>
-            </div>
-
-            <div class="section">
-                <h3>Google Calendar</h3>
-                <iframe src="https://calendar.google.com/calendar/embed?src=617bostonmover%40gmail.com"
-                    style="border: 0" width="700" height="400" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 style="color: #4630D2; font-size: 26px;">Affordable Movers Boston: Quality Service at a Great Price</h2>
-            <div class="container">
-                <div class="content">
-                    <p>Looking for budget-friendly yet high-quality moving services? Contact 617 Boston Movers today! As
-                        professional and economical Boston movers, we aim to provide exceptional service at a great
-                        price. Whether you're moving locally or across the state, we offer competitive rates without
-                        compromising on service quality.</p> <br>
-                    <p>
-                        Our experienced team and attention to detail ensure your move is handled with professionalism.
-                        We deliver smooth, affordable moving services without the hassle and high costs associated with
-                        expensive companies.
-                    </p> <br>
-
-                    <p>
-                        We strive to exceed your expectations. No matter your budget, you deserve an experienced Boston
-                        moving company. 617 Boston Movers is proud to offer top-notch services at reasonable prices,
-                        ensuring your satisfaction with our work.
-
-                    </p>
-                    <br>
-
-                    <p>
-                        We are your go-to movers and packers in Boston, making your move hassle-free and cost-effective.
-                        Utilizing the latest equipment and methods, we ensure the safe transport of your belongings,
-                        making us one of the most reliable moving companies in Boston, MA.
-                    </p>
-
-                </div>
-                <div class="youtube-link">
-                    <iframe width="500" height="360" src="https://www.youtube.com/embed/nixyj_7CkCs?si=PhgAK-k1EQK2pQmp"
-                        title="Movers in Boston | 617 Boston Movers | Call +1 (617) 208-4040" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <div class="line"></div>
-                </div>
-
-            </div>
-        </div>
-        <div class="section">
-            <h2>Google Docs</h2>
-            <iframe
-                src="https://docs.google.com/document/d/e/2PACX-1vTO45XgT3B2ZSy55lIuKC4mE7p74zxa7GgEbh79rQKhB7KMU1qB2ChPY7Um2NcdaXpemtufmbwJyZYC/pub?embedded=true"
-                style="height: 400px; width: 800px;"></iframe>
-        </div>
-        <div class="line"></div>
-
-
-        <div class="section">
-            <h2 style="color: #4630D2; font-size: 26px;">Why Choose 617 Boston Movers?
-            </h2>
-            <div class="container">
-                <div class="content">
-                    <p>Wondering what makes us stand out? It's simple—experience, dedication, and a commitment to our
-                        clients. Serving the Boston community, we've built a reputation for excellence, one successful
-                        move at a time. We offer distinct advantages that set us apart from other Boston moving
-                        companies. When you choose us, you're choosing:</p>
-                    <br>
-                    <ul>
-                        <li style="list-style: decimal;"><b>Experience and Expertise:</b> 617 Boston Movers brings years
-                            of experience in residential and commercial relocations, ensuring precision and efficiency.
-                            Our skilled movers in Boston, Massachusetts, are dedicated to delivering top-notch customer
-                            service, handling every aspect of your move from packing to transportation with
-                            professionalism and care.</li> <br>
-                        <li style="list-style: decimal;"><b>Fair Pricing:</b> We maintain transparent pricing with no
-                            surprise fees, keeping your budget intact. Our attentive staff arrives promptly and respects
-                            your time, offering additional insurance options for added peace of mind.
-                        </li> <br>
-                        <li style="list-style: decimal;"><b>Local Moving Knowledge:</b> As a trusted Boston moving
-                            company, we possess extensive knowledge of the local area. Navigating city streets is second
-                            nature to us, ensuring the secure and timely delivery of your belongings. At 617 Boston
-                            Movers, client satisfaction is paramount—we go above and beyond to ensure a smooth,
-                            stress-free move.
-                        </li> <br>
-                        <li style="list-style: decimal;"><b>Personalized Service:</b> Recognizing that every move is
-                            unique, we tailor our services to meet your specific needs. Our movers arrive punctually,
-                            keeping your schedule on track, and ensuring your complete satisfaction is our top priority.
-                            Choose 617 Boston Movers for a moving experience that exceeds expectations.</li> <br>
-                    </ul>
-                    <br>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-    <div class="section">
-        <h2 style="text-align: center; color: #4630D2; font-size: 30px;"> Find Us online at</h2><br>
-        <ul style="list-style: square; text-align: justify; margin-left: 300px; text-decoration: none;">
-
-            <li><a href="https://617-boston-movers.netlify.app/"
-                    style="text-decoration: none; color: #007bff;">https://617-boston-movers.netlify.app/</a>
-            </li>
-            <li><a href="https://boston-movers-rkctu.ondigitalocean.app/"
-                    style="text-decoration: none; color: #007bff;">https://boston-movers-rkctu.ondigitalocean.app/</a>
-            </li>
-            <li><a href="https://storage.googleapis.com/617-boston-movers/Google%20Cloud/index.html"
-                    style="text-decoration: none; color: #007bff;">https://storage.googleapis.com/617-boston-movers/Google%20Cloud/index.html</a>
-            </li>
-            <li><a href="https://vercel-617-boston-movers.vercel.app/index.html"
-                    style="text-decoration: none; color: #007bff;">https://vercel-617-boston-movers.vercel.app/index.html</a>
-            </li>
-            <li><a href="https://617-boston-movers-coder9653-96280d946927e3542a87eb30a162a3066d7.gitlab.io/"
-                    style="text-decoration: none; color: #007bff;">https://617-boston-movers-coder9653-96280d946927e3542a87eb30a162a3066d7.gitlab.io/</a>
-            </li>
-            <li><a href="https://cf-617-boston-movers.pages.dev/"
-                    style="text-decoration: none; color: #007bff;">https://cf-617-boston-movers.pages.dev/</a>
-            </li>
-            <li><a href="https://617-boston-movers.surge.sh/"
-                    style="text-decoration: none; color: #007bff;">https://617-boston-movers.surge.sh/</a>
-            </li>
-            <li><a href="https://f005.backblazeb2.com/file/617-boston-movers/index.html"
-                    style="text-decoration: none; color: #007bff;">https://f005.backblazeb2.com/file/617-boston-movers/index.html</a>
-            </li>
-            <li><a href="https://boston-movers-617.web.app"
-                    style="text-decoration: none; color: #007bff;">https://boston-movers-617.web.app</a>
-            </li>
-
-        </ul>
-        <br>
-        <br>
-
-        <div class="section">
-            <h2 style="text-align: center; color: #4630D2; font-size: 26px;"> Find Us on Google</h2><br>
-            <div class="container">
-                <div class="google-maps-container">
-                    <div class="google-maps">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5893.749462456503!2d-71.032297!3d42.387815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3719355261955%3A0x67e691f6362e7eca!2s617%20Boston%20Movers!5e0!3m2!1sen!2sus!4v1720464341276!5m2!1sen!2sus"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="google-maps">
-                        <iframe
-                            src="https://www.google.com/maps/d/embed?mid=1GHzoZBwtB8tQtACdnKmW56nB8b1Ykcw&ehbc=2E312F&noprof=1"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="section"> -->
-
-
-    <body>
-        <footer>
-            <div class="footerContainer">
-                <div class="socialIcons">
-
-                    <a href="https://www.facebook.com/617bostonmovers/ 
-                        "><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/617bostonmovers/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/617BostonMovers"><i class="fa-brands fa-twitter"></i></a>
-                    <a
-                        href="https://www.google.com/maps/d/viewer?mid=1GHzoZBwtB8tQtACdnKmW56nB8b1Ykcw&ll=42.3824655%2C-71.03228209999999&z=17"><i
-                            class="fa-brands fa-google-plus"></i></a>
-
-                </div>
-
-            </div>
-            <p>Copyright &copy;2024 | 617 Boston Movers, 215 Condor St, Boston, MA 02128, USA +1 (617) 208-4040</p>
-            </div>
-        </footer>
-
-        <script>
-            window.addEventListener('scroll', function () {
-                var header = document.getElementById('header');
-                header.classList.toggle('scrolled', window.pageYOffset > 0);
-            });
-
-            document.addEventListener('DOMContentLoaded', function () {
-                const menuIcon = document.querySelector('.menu-icon');
-                const nav = document.getElementById('nav-menu');
-
-                menuIcon.addEventListener('click', function () {
-                    nav.classList.toggle('active');
-                });
-            });
-
-        </script>
-
-    </body>
-
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var open = toggle.getAttribute('aria-expanded') === 'true';
+      setHH();
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+      nav.classList.toggle('open', !open);
+      document.body.style.overflow = open ? '' : 'hidden';
+    });
+  }
+  if (dropBtn) {
+    dropBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = drop.classList.toggle('open');
+      dropBtn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', function (e) {
+      if (!drop.contains(e.target) && window.innerWidth > 1024) {
+        drop.classList.remove('open');
+        dropBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        drop.classList.remove('open');
+        dropBtn.setAttribute('aria-expanded', 'false');
+        if (nav && nav.classList.contains('open') && toggle) toggle.click();
+      }
+    });
+  }
+})();
+</script>
+</body>
 </html>
-
